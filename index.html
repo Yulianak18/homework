@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerald Tablet</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #234c63;
+        font-size: bold ;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #35495e;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 4px;
+        background-color: #f8f398;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 22px;
+        margin: 40px 0 30px;
+        text-align: justify;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #7d51e8;
+        font-size: 13px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        font-size: 24px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        background: linear-gradient(109.6deg, rgb(209, 158, 246) 11.2%, rgb(93, 219, 241) 91.1%);
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      body {
+        background: linear-gradient(109.6deg, rgb(217, 250, 158) 11.2%, rgb(128, 251, 174) 91.1%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hermes Trismegistus</h1>
+      <h2>Emerald Tablet</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/542/original/table2.jpeg?1691449119"
+        alt="emeraldTable"
+        width="200"
+      />
+      <p>
+       <strong> The Legendary Emerald Tablet and its Secrets of the Universe</strong>
+        The origins of Western alchemy can be traced back to Hellenistic Egypt, in particular 
+        to the city of Alexandria. One of the most important characters in the mythology of 
+        alchemy is Hermes Trismegistus (Hermes the Thrice-Great). The name of this figure is 
+        derived from the Egyptian god of wisdom, Thoth, and his Greek counterpart, Hermes. 
+        The Hermetica, which is said to be written by Hermes Trismegistus, is generally regarded 
+        as the basis of Western alchemical philosophy and practice. In addition, Hermes Trismegistus 
+        is also believed to be the author of the Emerald Tablet.
+
+        <br />
+        <br />
+
+        <strong>Legends of the Emerald Tablet</strong>
+        The Emerald Tablet is said to be a tablet of emerald or green stone inscribed with the secrets 
+        of the universe. The source of the original Emerald Tablet is unclear; hence it is surrounded by 
+        legends. The most common story claims that the tablet was found in a caved tomb under the statue 
+        of Hermes in Tyana, clutched in the hands of the corpse of Hermes Trismegistus himself.
+
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Hermes_Trismegistus"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buy-button">👉 Download the book here</button>
+      <p class="footer">
+        This page was built by
+        Yuliana Cadavid
+      </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("what is your name?");
+        let email = prompt("what is your email address?");
+        
+        alert(
+          "Thank you " +
+            name +
+            " !you'll be getting a PDF file book in a few minutes, to this email address! " 
+            + email
+            
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
